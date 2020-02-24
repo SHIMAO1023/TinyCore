@@ -7,7 +7,6 @@
   <ItemGroup>
     <Folder Include="interface\" />
     <Folder Include="implement\" />
-    <Folder Include="dto\" />
   </ItemGroup>
 
 </Project>
