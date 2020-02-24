@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TinyCore.Web</name>
+    </assembly>
+    <members>
+        <member name="T:TinyCore.Web.Controllers.AuthController">
+            <summary>
+            权限
+            </summary>
+        </member>
+        <member name="M:TinyCore.Web.Controllers.AuthController.Login(TinyCore.Service.dto.LoginDto)">
+            <summary>
+            登陆
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TinyCore.Web.ServiceExtension.ConfigureAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            jwt
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:TinyCore.Web.ServiceExtension.ConfigureSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            swagger
+            </summary>
+            <param name="services"></param>
+        </member>
+    </members>
+</doc>

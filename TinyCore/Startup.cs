@@ -28,6 +28,8 @@ namespace TinyCore
             services.AddControllers();
 
             services.ConfigureAuthentication();
+
+            services.ConfigureSwagger();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,6 +39,15 @@ namespace TinyCore
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(opt =>
+            {
+                opt.SwaggerEndpoint("/swagger/v1/swagger.json", "TinyCore Docs");
+                opt.RoutePrefix = "doc";
+                opt.DocumentTitle = "TinyCore API";
+            });
 
             app.UseRouting();
 

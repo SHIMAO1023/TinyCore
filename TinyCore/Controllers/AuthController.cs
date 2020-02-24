@@ -12,14 +12,22 @@ using TinyCore.Service.dto;
 
 namespace TinyCore.Web.Controllers
 {
+    /// <summary>
+    /// 权限
+    /// </summary>
     [Route("api/[controller]")]
-    [ApiController]
+    [ApiController]    
     public class AuthController : ControllerBase
     {
         public AuthController()
         {
         }
 
+        /// <summary>
+        /// 登陆
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         [HttpPost, Route("login")]
         public IActionResult Login([FromBody] LoginDto user)
         {
